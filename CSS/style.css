@@ -1,0 +1,120 @@
+.attribution { 
+    font-size: 11px;
+     text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: hsl(0, 0%, 100%);
+}
+
+/* Wrapper Container */
+.wrapper {
+    width: 100%;
+    max-width: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    margin: auto;
+    padding: 1em 2em;
+}
+
+.notifivation-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.users-container {
+    width: 100%;  
+}
+.user-img-container {
+    width: 50px;
+}
+.user-profile-container {
+    background: hsl(205, 33%, 90%);
+    padding: 0.6em 1em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+.user-img-container img {
+    width: 100%;
+}
+
+.hidden-div {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid  hsl(218, 6%, 74%);
+    padding: 0.7em 1em 0em 1em;
+    border-radius: 3px;
+}
+.white-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: hsl(0, 0%, 100%);
+}
+.white-profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kimberly{
+    width: 40px;
+}
+
+/* All The Text Here */
+.notification-bar-text {
+    color: hsl(219, 14%, 63%);
+}
+#num-bar {
+    font-size: 1rem;
+    font-weight: 400;
+    padding:  0.2em 0.7em;
+    border-radius: 5px;
+    background: hsl(224, 52%, 27%);
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    top: -7px;
+    left: 6px;
+}
+.user-text {
+    word-spacing: 3px;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: hsl(219, 12%, 42%);
+}
+.time {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: hsl(219, 12%, 42%);
+    font-size: 14px;
+}
+.user-link a{
+    text-decoration: none;
+    color: #252525;
+    font-weight: 600;
+}
+.user-link a:hover,
+.user-link a:focus {
+    color: hsl(224, 49%, 43%);
+}
+.hidden-div p {
+    color: hsl(219, 12%, 42%);
+    font-size: 15px;
+    margin-top: 0;
+}
