@@ -76,7 +76,7 @@ html, body {
     align-items: center;
 }
 .kimberly{
-    width: 45px;
+    width: 40px;
 }
 .kimberly img {
     width: 100%;
@@ -128,7 +128,7 @@ html, body {
         padding: 1em;
     }
     .notification-bar-heading h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
     #num-bar {
         font-size: 13px;
