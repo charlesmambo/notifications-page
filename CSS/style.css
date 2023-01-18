@@ -41,7 +41,7 @@ body {
     width: 100%;  
 }
 .user-profile-container {
-    background: #F4D9E7;
+    background: #EAE0DA;
     padding: 0.6em 1em;
     border-radius: 5px;
     display: flex;
@@ -64,6 +64,10 @@ body {
     padding: 0.7em 1em 0em 1em;
     border-radius: 3px;
 }
+.hidden-div:hover,
+.hidden-div:focus {
+    background: #EAE0DA;
+}
 .white-container {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -75,7 +79,7 @@ body {
     align-items: center;
 }
 .kimberly{
-    width: 40px;
+    width: 35px;
 }
 .kimberly img {
     width: 100%;
@@ -83,6 +87,11 @@ body {
 /* All The Text Here */
 .notification-bar-text {
     color: hsl(219, 14%, 63%);
+    cursor: pointer;
+}
+.notification-bar-text:hover,
+.notification-bar-text:focus{
+    color: hsl(224, 52%, 27%);
 }
 #num-bar {
     font-size: 1rem;
@@ -127,7 +136,7 @@ body {
         padding: 1.1em;
     }
     .notification-bar-heading h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
     #num-bar {
         font-size: 13px;
