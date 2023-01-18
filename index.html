@@ -6,11 +6,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Frontend Mentor | Notifications page</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-   
-  </style>
 </head>
 <body>
 
@@ -27,41 +26,11 @@
     <!------------------------- Users  ----------------------------------------->
     <div class="users-container">
 
-       <div class="user-profile-container">
-          <div class="user-img-container">
-            <img src="images/avatar-mark-webber.webp" alt="mark`s profile picture">
-          </div>
-            <!----------- User Post ------>
-          <div class="user-post-container">
-            <p class="user-text">
-              <span class="user-link"><a href="#">Mark Webber</a></span> reacted to your recent post  <span class="user-link"><a href="#">My first tournament today!</a></span></p>
-            <p class="time">1m ago</p>
-          </div>
-       </div>
+       <div class="user-profile-container" id="webber-el"></div>
 
-       <div class="user-profile-container">
-        <div class="user-img-container">
-          <img src="images/avatar-angela-gray.webp" alt="angela`s profile picture">
-        </div>
-          <!----------- User Post ------>
-        <div class="user-post-container">
-          <p class="user-text">
-            <span class="user-link"><a href="#">Angela Gray</a></span> followed you</p>
-          <p class="time">5m ago</p>
-        </div>
-     </div>
+       <div class="user-profile-container" id="angela-g"></div>
 
-     <div class="user-profile-container">
-        <div class="user-img-container">
-          <img src="images/avatar-jacob-thompson.webp" alt="jacob`s profile picture">
-        </div>
-          <!----------- User Post ------>
-        <div class="user-post-container">
-          <p class="user-text">
-            <span class="user-link"><a href="#">Jacob Thompson</a></span> has joined your group <span class="user-link"><a href="#">Chess Club</a></span></p>
-          <p class="time"> 1 day ago</p>
-        </div>
-   </div>
+       <div class="user-profile-container" id="jacob-el"></div>
 
       <div class="rizky-profile-container">
         <div class="user-profile-container white-container">
@@ -71,7 +40,12 @@
           <!----------- User Post ------>
         <div class="user-post-container">
           <p class="user-text">
-            <span class="user-link"><a href="#">Rizky Hasanuddin</a></span> sent you a private message</p>
+            <span class="user-link">
+              <a href="#">Rizky Hasanuddin</a>
+            </span> sent you a private message
+            <i class="fa-solid fa-message" id="message-icon" 
+            onmouseover="bigImg(this)" onmouseout="normalImg(this)"></i>
+           </p>
           <p class="time">5 days ago</p>
         </div>
         </div>
@@ -99,7 +73,7 @@
       </div>
 
        <!-- Hidden Message Container -->
-       <div class="user-img-container kimberly">
+       <div class=" kimberly">
         <img src="images/image-chess.webp" alt="kimberly`s profile picture">
       </div>
       
